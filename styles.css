@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #4d4e53;
+    line-height: 1.5;
+}
+
+#navbar{
+    position: fixed;
+    width:300px;
+    min-width: 280px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar header{
+    font-size: 1.8em;
+    font-weight: thin;
+    text-align: center;
+    margin: 10px;
+    color: black;
+}
+#navbar .icon{
+    display: none;
+}
+#navbar ul{
+    height: 88%;
+    width: 100%;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#navbar  li{  
+    position: relative;
+    width: 100%;
+    list-style: none;
+    color: #4d4e53;
+    border-top: 1px solid;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #4d4e53;
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#main-doc{
+    margin-left: 320px;
+    margin-top: 2rem;
+}
+
+#menu-items{
+    display: block;
+}
+.main-section header{
+    color: black;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+section article{
+    color: #0d0d10;
+    margin: 15px;
+    font-size: 0.96em;
+}
+section li{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+code{
+    word-wrap: break-word;
+    white-space: pre-line;
+    display: block;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    line-height: 2;
+    position: relative;
+    word-break: normal;
+}
+/*For desktops and laptops*/
+@media screen and (max-width:1440px) {
+    #menu-items{
+        display:block;
+    }
+}
+
+/*For Tablets*/
+@media screen and (max-width: 960px){
+
+    #navbar{
+        height: auto;
+        width: 100%;
+        background:#F8F8F8;
+        z-index: 1;
+    }
+
+    #navbar a.icon{
+        display: block;
+        color: black;
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        height: auto;
+    }
+
+    #navbar header{
+        text-align: left;
+        margin:3px 0 8px 5px;
+        font-size: 1.6rem;
+    }
+    #menu-items{
+        display: none;
+    }
+
+    #main-doc{
+        margin: 0;
+    }
+
+    .main-section header{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .main-section{
+        margin-top: 20px;
+    }
+    .main-section:first-child{
+        margin-top: 55px;
+    }
+
+    .main-section article{
+        /* z-index: 1; */
+        position: relative;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px){
+
+    .main-section article{
+        margin: 7px;
+    }
+
+    .main-section article ul{
+        padding-left: 21px;     
+    }
+}
